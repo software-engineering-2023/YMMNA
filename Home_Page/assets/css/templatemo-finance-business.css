@@ -12,6 +12,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 p {
 	margin-bottom: 0px;
@@ -235,7 +236,7 @@ header {
 	position: absolute;
 	z-index: 99999;
 	width: 100%;
-	background-color: transparent!important;
+	background-color:  #6f42c1;
 	height: 80px;
 	-webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
@@ -441,12 +442,12 @@ ul.slick-dots {
 }
 
 .Modern-Slider .text-content {
-	text-align: left;
-  	width: 75%;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .Modern-Slider .item h6 {
@@ -481,6 +482,7 @@ ul.slick-dots {
 
 .Modern-Slider .item a {
   margin: 0 5px;
+  white-space: nowrap;
 }
 
 .Modern-Slider .item.slick-active h6{
@@ -757,7 +759,6 @@ ul.slick-dots {
 .callback-form {
 	margin-top: 140px;
 }
-
 .callback-form .contact-form {
 	background-color: #a4c639;
 	padding: 60px;
@@ -777,6 +778,7 @@ ul.slick-dots {
 	box-shadow: none;
 	border: none;
 	margin-bottom: 35px;
+	width: 300%;
 }
 
 .callback-form .contact-form input:focus {
@@ -790,7 +792,7 @@ ul.slick-dots {
 	height: 120px;
 	max-height: 200px;
 	min-height: 120px;
-	display: inline-block;
+
 	padding: 15px;
 	color: #6a6a6a;
 	font-size: 13px;
@@ -837,6 +839,95 @@ ul.slick-dots {
 	background-color: #fff;
 	color: #a4c639;
 }
+
+.register-form{
+	margin-top: 60px;
+    margin-inline: auto;
+    width: 50%;
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+.register-form .contact-form {
+	background-color: #a4c639;
+	padding: 60px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.register-form .contact-form input {
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0px 15px;
+	color: #6a6a6a;
+	font-size: 13px;
+	text-transform: none;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 35px;
+	width: 300%;
+}
+
+.register-form .contact-form input:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+.register-form .contact-form textarea {
+	border-radius: 20px;
+	height: 120px;
+	max-height: 200px;
+	min-height: 120px;
+
+	padding: 15px;
+	color: #6a6a6a;
+	font-size: 13px;
+	text-transform: none;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 35px;
+}
+
+.register-form .contact-form textarea:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+.register-form .contact-form ::-webkit-input-placeholder { /* Edge */
+  color: #aaa;
+}
+.register-form .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+.register-form .contact-form ::placeholder {
+  color: #aaa;
+}
+
+.register-form .contact-form button.border-button {
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 28px;
+	border-radius: 30px;
+	display: inline-block;
+	transition: all 0.3s;
+	outline: none;
+	box-shadow: none;
+	text-shadow: none;
+	cursor: pointer;
+}
+
+.register-form .contact-form button.border-button:hover {
+	background-color: #fff;
+	color: #a4c639;
+}
+
 
 .contact-us .contact-form button.filled-button {
 	background-color: #a4c639;
