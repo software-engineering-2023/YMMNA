@@ -441,12 +441,12 @@ ul.slick-dots {
 }
 
 .Modern-Slider .text-content {
-    text-align: center;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	text-align: left;
+  	width: 75%;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 .Modern-Slider .item h6 {
@@ -481,7 +481,6 @@ ul.slick-dots {
 
 .Modern-Slider .item a {
   margin: 0 5px;
-  white-space: nowrap;
 }
 
 .Modern-Slider .item.slick-active h6{
@@ -778,7 +777,6 @@ ul.slick-dots {
 	box-shadow: none;
 	border: none;
 	margin-bottom: 35px;
-	width: auto;
 }
 
 .callback-form .contact-form input:focus {
@@ -792,7 +790,7 @@ ul.slick-dots {
 	height: 120px;
 	max-height: 200px;
 	min-height: 120px;
-
+	display: inline-block;
 	padding: 15px;
 	color: #6a6a6a;
 	font-size: 13px;
