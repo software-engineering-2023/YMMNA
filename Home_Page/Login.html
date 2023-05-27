@@ -94,11 +94,13 @@ https://templatemo.com/tm-545-finance-business
                             </div>
                             <div class="col-md-12">
                               <div class="contact-form">
-                                <form id="contact" action="" method="post">
+                                <form id="contact" action="javascript:myFunction()">
                                   <div class="row"> 
                                     <div class="col-lg-4 col-md-12 col-sm-12">
                                       <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name" placeholder="Full Name             " required="">
+                                        <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required=""
+                                        oninvalid="this.setCustomValidity('Format: name@domain.com')"
+                                        oninput="this.setCustomValidity('')" >
                                       </fieldset>
                                     </div>
                                     <br>
@@ -108,25 +110,35 @@ https://templatemo.com/tm-545-finance-business
                                     <br>
                                     <div class="col-lg-4 col-md-12 col-sm-12">
                                       <fieldset>
-                                        <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                                        <input name="password" type="password" class="form-control" id="password" placeholder="Password" required="">
                                       </fieldset>
                                     </div>
                     
                                   </div>
                                   <div class="row">
-                                  <div class="col-lg-4 col-md-12 col-sm-12">
-                                      <a href="register.html">New Client? Register!</a>
-                                  </div>
-                                  </div>
+                                    <div id = "logindisplay" class="whitespace">
+                                       
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                      <div id = "register1" >
+                                          <a href="forgotpassword.html">Forgot password</a>
+                                      </div>
+                                      </div>
+                                      <br>
                                   <div class="row">
-
-                                    
                                     <div class="">
                                       <fieldset>
-                                        <button type="submit" id="form-submit" class="border-button">Send Message</button>
+                                        <button type="submit" id="form-submit" class="border-button">Login</button>
                                       </fieldset>
                                     </div>
                                   </div>
+                                  <br>
+                                  <div class="row">
+                                    <div id = "register1" class="col-lg-4 col-md-12 col-sm-12">
+                                        <a href="register.html">New Client? Register!</a>
+                                    </div>
+                                    </div>
                                 </form>
                               </div>
                             </div>
@@ -146,7 +158,7 @@ https://templatemo.com/tm-545-finance-business
         </div>
     </div>
 
-    <div class="callback-form" id="contactus">
+    <!-- <div class="callback-form" id="contactus">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -190,7 +202,7 @@ https://templatemo.com/tm-545-finance-business
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="partners">
       <div class="container">
@@ -226,7 +238,7 @@ https://templatemo.com/tm-545-finance-business
 
 
     <!-- Footer Starts Here -->
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
@@ -290,7 +302,7 @@ https://templatemo.com/tm-545-finance-business
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     
     <div class="sub-footer">
       <div class="container">
@@ -314,6 +326,10 @@ https://templatemo.com/tm-545-finance-business
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
+    <script>
+      document.getElementById("email").required = true;
+      document.getElementById("password").required = true;
+    </script>
     <script>
       $(function() {
         // Single Page Nav
@@ -339,6 +355,23 @@ https://templatemo.com/tm-545-finance-business
           }
       }
     </script>
+<script>
+      function myFunction() {
+        //window.alert("hello");
+        var x = document.getElementById("email").value;
+        var y = document.getElementById("password").value;
+        if(x == "client@gmail.com"&& y == "123")
+        {
+          
+          location.href="register.html";
+        }
+        else
+        {
+          document.getElementById("logindisplay").innerHTML = "Incorrect Email or Password";
+        }
+        //document.getElementById("demo").innerHTML = x;
+          }
 
+</script>
   </body>
 </html>
