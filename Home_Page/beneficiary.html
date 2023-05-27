@@ -64,103 +64,79 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>YMMNA</h2></a>
+          <a class="navbar-brand" href="index.html"><h2>Finance Business</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-         
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link current" href="#top">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link external" href="index.html">Multi-page</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-
+   
     <!-- Banner Ends Here -->
 
 
 
-    <div class="register-form" id="contactus">
+    <div class="services" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2><em>Register</em></h2>
-              <span>Please Fill all required fields</span>
+              <h2>Benficiariy <em>type</em></h2>
+              <span>Please select your beneficiary type</span>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="contact-form">
-              <form id="contact" action="javascript:myFunction()">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="NationalId" type="text" class="form-control" id="nationalid" placeholder="NationalId" required="">
-                    </fieldset>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="newfont">
-                     Upload Image of NationalId
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                      <input type="file" value=" upload" class="border-button" id="myFile" data-text = "vall" name="filename" required="">
-                  </div>
-                </div>
-                  <!-- <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div> -->
-                  <div class="row">
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
-                    </fieldset>
-                  </div>
-                  </div>
-                </div>
-              </form>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_01.jpg" alt="">
+              <div class="down-content">
+                <h4>International</h4>
+                <p>For Clients outside Egypt and outside YMMNA International Bank
+                </p>
+                <a href="InternationalBeneficiary.html" class="filled-button" id = "addinternatbene" >Add</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="register-form" id="SuccessMessage" hidden="hidden" >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2><em>Account Created Successfully</em></h2>
-              <h2><em> </em></h2>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_02.jpg" alt="">
+              <div class="down-content">
+                <h4>Domestic</h4>
+                <p>For Clients inside Egypt but outside YMMNA International Bank</p>
+                <a href="Domesticbeneficiary.html" class="filled-button" id = "adddombene"onclick="">Add</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="contact-form">
-              <div class="row">
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <a href="Login.html" class="border-button" id = "adddombene"onclick="">Go To Login</a>
-                    </fieldset>
-                  </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_03.jpg" alt="">
+              <div class="down-content">
+                <h4>Internal</h4>
+                <p>For Clients inside the YMMNA International Bank</p>
+                <a href="InternalBeneficiary.html" class="filled-button" id = "addinterbene"onclick="">Add</a>
               </div>
             </div>
           </div>
@@ -168,6 +144,17 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Starts Here -->
 
     
     <div class="sub-footer">
@@ -218,28 +205,5 @@ https://templatemo.com/tm-545-finance-business
       }
     </script>
 
-        <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
-      <script>
-        function myFunction() {
-         // window.alert("hello");
-
-
-        
-            document.getElementById("SuccessMessage").removeAttribute("hidden");
-            document.getElementById("contactus").style.display = "none";
-            
-          //document.getElementById("demo").innerHTML = x;
-            }
-  
-  </script>
   </body>
 </html>
